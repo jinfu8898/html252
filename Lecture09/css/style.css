@@ -1,0 +1,20 @@
+.container{ text-align: center;}
+
+input{
+	  margin: 20px;
+	  font-size: 2em;
+	  border:1px solid #cccccc;}
+
+input[type="submit"]	  
+{
+    background: #cccccc;
+	border-radius: 8px;
+}
+
+input[type="submit"]:hover	  
+{
+    opacity: 0.8;
+}
+
+#total{font-size: 3em;}
+
