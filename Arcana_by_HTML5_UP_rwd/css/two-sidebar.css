@@ -1,0 +1,768 @@
+@font-face {
+    font-family: "fontawesome";
+    src: url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.woff2') format('woff2'), url('../fonts/fontawesome-webfont.eot') format('eot'), url('../fonts/FontAwesome.otf') format('otf');
+}
+
+body {
+    font-family: fontawesome, sans-serif;
+    background: #f7f7f7;
+}
+
+a {
+    text-decoration: none
+}
+
+em {
+    font-weight: 100;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 840px) {
+    /*header*/
+    
+    #header {
+        padding: 56px 0 0 0;
+        border-bottom: 1px solid #37c0fb;
+    }
+    /*header-目前頁面*/
+    
+    .current:after {
+        content: '';
+        position: absolute;
+        top: 58px;
+        left: 53px;
+        border-left: 10px solid #333333;
+        border-right: 10px solid #333333;
+        border-bottom: 10px solid #37c0fb;
+    }
+    /*標題*/
+    
+    h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 0 0 51px 0;
+        text-align: center;
+    }
+    h1>a {
+        color: #474747;
+    }
+    h1>a:hover {
+        color: #37c0fb;
+    }
+    /*導覽列*/
+    
+    nav {
+        font-size: 1em;
+        background: #333333;
+        padding: 0px;
+        border-bottom: 13px solid #37c0fb;
+    }
+    /*所有選單*/
+    
+    #nav ul {
+        text-align: center;
+    }
+    /*第一層選單的選項*/
+    
+    #nav ul>li {
+        position: relative;
+        display: inline-block;
+        width: 130px;
+    }
+    #nav ul:first-child>li {
+        padding: 25px 0px 25px 0px;
+    }
+    /*第二層選單*/
+    
+    #nav ul>li>ul {
+        position: absolute;
+        text-align: center;
+        background: #333333;
+        width: 160px;
+        border-radius: 10px;
+        left: -16px;
+        box-shadow: 0 20px 20px rgba(34, 34, 34, 0.5);
+        padding-top: 20px;
+        display: none;
+    }
+    #nav ul>li>ul>li {
+        width: 100%;
+        padding: 10px;
+    }
+    /*第三層選單*/
+    
+    #nav ul>li>ul>li>ul {
+        position: absolute;
+        text-align: center;
+        background: #333333;
+        width: 160px;
+        top: 0px;
+        left: 160px;
+        padding-top: 0px;
+        border-radius: 10px;
+        box-shadow: 0 20px 20px rgba(34, 34, 34, 0.5);
+        display: none;
+    }
+    /*選單連結被選取*/
+    
+    #nav ul > li a {
+        display: block;
+        color: #c0c0c0;
+    }
+    #nav ul > li > a:hover {
+        color: white;
+    }
+    #nav ul>li:hover > a {
+        color: white;
+    }
+    /*展第二層選單*/
+    
+    #nav ul>li:hover > ul {
+        display: block;
+    }
+    /*展第三層選單*/
+    
+    #nav ul>li>ul>li:hover > ul {
+        display: block;
+    }
+    /*main*/
+    
+    .style1 {
+        background: white;
+        line-height: 1.5em;
+    }
+    .container .row .u4 {
+        width: 32%;
+        float: right;
+        display: inline-block;
+    }
+    .container .row .u8 {
+        width: 68%;
+        float: left;
+        display: inline-block;
+    }
+    /*content*/
+    
+    #content > article {
+        font-size: 1em;
+        color: #474747;
+        text-align: left;
+        letter-spacing: 1px;
+        margin: 50px 50px 0px 60px;
+    }
+    #content > article > header > h2 {
+        color: #474747;
+        font-size: 2.5em;
+        margin: 0px 0px 20px 0px;
+    }
+    #content > article > header > p {
+        color: #999999;
+        font-size: 1em;
+        margin: 0px 0px 20px 0px;
+    }
+    #content article span img {
+        width: 100%;
+        border-radius: 8px
+    }
+    #content > article > h3 {
+        font-size: 1.5em;
+        margin: 25px 25px 25px 0px;
+        color: #474747;
+    }
+    #content > article > p {
+        font-size: 1em;
+        margin: 25px 25px 25px 0px;
+        color: #474747;
+    }
+    .container .u3 #sidebar1 section,
+    .container .u3 #sidebar2 section {
+        margin: 50px 0px 60px 60px;
+    }
+    .container .u3 #sidebar1 section h3,
+    .container .u3 #sidebar2 section h3 {
+        color: #474747;
+        font-size: 1.2em
+    }
+    .container .u3 #sidebar1 section p,
+    .container .u3 #sidebar2 section p {
+        color: #474747;
+        font-size: 1em;
+        margin: 40px 0px 40px 0px;
+    }
+    .container .u3 #sidebar1 section ul,
+    .container .u3 #sidebar2 section ul {
+        margin: 40px 0px 40px 0px;
+    }
+    .container .u3 #sidebar1 section ul li,
+    .container .u3 #sidebar2 section ul li {
+        padding: 10px 0px 10px 0px;
+    }
+    .container .u3 #sidebar1 section ul li a,
+    .container .u3 #sidebar2 section ul li a {
+        font-size: 0.9em;
+        color: #37c0fb;
+        border-bottom: 1px dashed #37c0fb;
+    }
+    .container .u3 #sidebar1 section ul li a:hover,
+    .container .u3 #sidebar2 section ul li a:hover {
+        border-bottom: 1px dashed #f7f7f7;
+    }
+    .container .u3 #sidebar1 section footer a,
+    .container .u3 #sidebar2 section footer a {
+        font-size: 1em;
+        background: #37c0fb;
+        color: white;
+        border-radius: 5px;
+        padding: 15px;
+    }
+    .container .u3 #sidebar1 section footer a:hover,
+    .container .u3 #sidebar2 section footer a:hover {
+        opacity: 0.9
+    }
+    /*footer*/
+    
+    #footer {
+        clear: both
+    }
+    #footer .container {
+        padding: 40px;
+    }
+    #footer .container .row .u3 {
+        float: left;
+        width: 25%;
+        display: inline-block;
+    }
+    #footer .container .row section h3 {
+        color: #474747;
+        font-size: 1em;
+        font-weight: bold;
+        padding-left: 0px;
+        text-align: left;
+    }
+    #footer .container .row section ul {
+        text-align: left;
+        padding: 30px 0px 0px 0px;
+    }
+    #footer .container .row section ul li {
+        color: #474747;
+        font-size: 0.9em;
+        font-weight: 100;
+        padding: 10px 10px 10px 0px;
+    }
+    #footer .container .row section ul li a {
+        color: #474747;
+        border-bottom: 1px dashed #474747;
+    }
+    #footer .container .row section ul li a:hover {
+        color: #37c0fb;
+        border-bottom: 1px dashed #f7f7f7
+    }
+    #footer .container .row .u6 {
+        width: 50%;
+        padding: 0 10px 10px 10px;
+        display: inline-block;
+    }
+    #footer .container .row .u6 form .row .u6 {
+        float: left;
+        width: 50%;
+        padding: 20px 10px 15px 0px;
+        display: inline-block;
+    }
+    #footer .container .row .u6 form .row .u12 {
+        float: left;
+        width: 100%;
+        padding: 0px 10px 0px 0px;
+        display: inline-block;
+    }
+    #footer .container .row .u6 form .row .u12 .actions {
+        float: left;
+        width: 100%;
+        padding: 0px;
+    }
+    #footer .container .row .u6 form .row .u12 .actions li {
+        padding: 10px 0px 0px 0px;
+    }
+    #name {
+        width: 100%;
+        height: 54px;
+        border: 1px solid #DADADA;
+        border-radius: 5px;
+    }
+    #name:focus {
+        width: 100%;
+        height: 54px;
+        border: 1px solid #37c0fb;
+        border-radius: 4px
+    }
+    #email {
+        width: 100%;
+        height: 54px;
+        border: 1px solid #DADADA;
+        border-radius: 5px;
+    }
+    #email:focus {
+        width: 100%;
+        height: 54px;
+        border: 1px solid #37c0fb;
+        border-radius: 4px
+    }
+    #message {
+        width: 100%;
+        height: 150px;
+        border: 1px solid #DADADA;
+        border-radius: 5px;
+    }
+    #message:focus {
+        width: 100%;
+        border: 1px solid #37c0fb;
+        border-radius: 4px
+    }
+    input[type="submit"] {
+        background: #555555;
+        color: white;
+        width: 160px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        border: 1px solid #555555;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background: #666666;
+    }
+    /*Icons*/
+    
+    .icons {
+        font-size: 1em;
+        text-align: center;
+    }
+    .icons li {
+        display: inline-block;
+        margin: 0px 10px 0px 10px;
+        font-size: 30px;
+    }
+    .icons li a {
+        color: #999999;
+    }
+    .icons li a:hover {
+        color: #474747;
+    }
+    .icons li a span {
+        display: none
+    }
+    /*copyright*/
+    
+    .copyright {
+        margin: 10px 0px 10px 0px;
+        text-align: center;
+        color: #474747;
+    }
+    .copyright .menu li {
+        font-family: arial;
+        font-size: 0.9em;
+        padding: 0px 10px 0px 10px;
+        display: inline-block;
+    }
+    .copyright .menu li:last-child {
+        border-left: 1px solid #474747;
+    }
+    .copyright .menu li a {
+        color: #474747;
+        border-bottom: 1px dashed #474747
+    }
+    .copyright .menu li a:hover {
+        color: #37c0fb;
+        border-bottom: 1px dashed #f7f7f7
+    }
+    .style1 {
+        background: white;
+        overflow: auto;
+    }
+    .container .row .u3 #sidebar1 {
+        float: left;
+        width: 25%;
+    }
+    .container .row .u6 #content {
+        float: left;
+        width: 50%;
+    }
+    .container .row .u3 #sidebar2 {
+        float: right;
+        display: inline-block;
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    /*header*/
+    /*header*/
+    
+    #header {
+        width: 100%;
+        position: fixed;
+        padding: 0;
+        height: 40px;
+        background: #333333;
+        border-bottom: 3px solid #37c0fb;
+        z-index: 99;
+    }
+    /*標題*/
+    
+    h1 {
+        width: 35%;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 10px 0px 0px 0px;
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        left: 32.5%;
+    }
+    h1>a {
+        color: white;
+        pointer-events: none;
+    }
+    #nav {
+        display: none
+    }
+    /*main*/
+    
+    .style1 {
+        background: white;
+        line-height: 1.5em;
+    }
+    .container .row .u3 {
+        display: inline-block;
+    }
+    .container .row .u6 {
+        display: inline-block;
+    }
+    /*content*/
+    
+    #content > article {
+        font-size: 1em;
+        color: #474747;
+        text-align: left;
+        letter-spacing: 1px;
+        margin: 50px 50px 0px 60px;
+    }
+    #content > article > header > h2 {
+        color: #474747;
+        font-size: 2.5em;
+        margin: 0px 0px 20px 0px;
+    }
+    #content > article > header > p {
+        width: 100%;
+        color: #999999;
+        font-size: 1em;
+        margin: 0px 0px 20px 0px;
+    }
+    #content article span img {
+        width: 100%;
+        border-radius: 8px
+    }
+    #content > article > h3 {
+        width: 100%;
+        font-size: 1.5em;
+        margin: 25px 25px 25px 0px;
+        color: #474747;
+    }
+    #content > article > p {
+        width: 100%;
+        font-size: 1em;
+        margin: 25px 25px 25px 0px;
+        color: #474747;
+    }
+    .container .u3 #sidebar1 section,
+    .container .u3 #sidebar2 section {
+        width: 100%;
+        margin: 50px 0px 60px 60px;
+    }
+    .container .u3 #sidebar1 section h3,
+    .container .u3 #sidebar2 section h3 {
+        width: 100%;
+        color: #474747;
+        font-size: 1.2em
+    }
+    .container .u3 #sidebar1 section p,
+    .container .u3 #sidebar2 section p {
+        width: 70%;
+        color: #474747;
+        font-size: 1em;
+        margin: 40px 0px 40px 0px;
+    }
+    .container .u3 #sidebar1 section ul,
+    .container .u3 #sidebar2 section ul {
+        margin: 40px 0px 40px 0px;
+    }
+    .container .u3 #sidebar1 section ul li,
+    .container .u3 #sidebar2 section ul li {
+        padding: 10px 0px 10px 0px;
+    }
+    .container .u3 #sidebar1 section ul li a,
+    .container .u3 #sidebar2 section ul li a {
+        font-size: 0.9em;
+        color: #37c0fb;
+        border-bottom: 1px dashed #37c0fb;
+    }
+    .container .u3 #sidebar1 section ul li a:hover,
+    .container .u3 #sidebar2 section ul li a:hover {
+        border-bottom: 1px dashed #f7f7f7;
+    }
+    .container .u3 #sidebar1 section footer a,
+    .container .u3 #sidebar2 section footer a {
+        font-size: 1em;
+        background: #37c0fb;
+        color: white;
+        border-radius: 5px;
+        padding: 15px;
+    }
+    .container .u3 #sidebar1 section footer a:hover,
+    .container .u3 #sidebar2 section footer a:hover {
+        opacity: 0.9
+    }
+    #footer {
+        clear: both
+    }
+    #footer .container {
+        padding: 40px;
+    }
+    #footer .container .row .u3 {
+        float: left;
+        width: 50%;
+        display: inline-block;
+    }
+    #footer .container .row section h3 {
+        color: #474747;
+        font-size: 1em;
+        font-weight: bold;
+        padding-left: 0px;
+        text-align: left;
+    }
+    #footer .container .row section ul {
+        text-align: left;
+        padding: 30px 0px 0px 0px;
+    }
+    #footer .container .row section ul li {
+        color: #474747;
+        font-size: 0.9em;
+        font-weight: 100;
+        padding: 10px 10px 10px 0px;
+    }
+    #footer .container .row section ul li a {
+        color: #474747;
+        border-bottom: 1px dashed #474747;
+    }
+    #footer .container .row section ul li a:hover {
+        color: #37c0fb;
+        border-bottom: 1px dashed #f7f7f7
+    }
+    #footer .container .row .u6 {
+        width: 100%;
+        padding: 0 10px 10px 10px;
+        display: inline-block;
+    }
+    #footer .container .row .u6 form .row .u6 {
+        float: left;
+        width: 50%;
+        padding: 20px 10px 15px 0px;
+        display: inline-block;
+    }
+    #footer .container .row .u6 form .row .u12 {
+        float: left;
+        width: 100%;
+        padding: 0px 10px 0px 0px;
+        display: inline-block;
+    }
+    #footer .container .row .u6 form .row .u12 .actions {
+        text-align: center;
+        float: left;
+        width: 100%;
+        padding: 0px;
+    }
+    #footer .container .row .u6 form .row .u12 .actions li {
+        padding: 10px 0px 0px 0px;
+    }
+    #name {
+        width: 100%;
+        height: 54px;
+        border: 1px solid #DADADA;
+        border-radius: 5px;
+    }
+    #name:focus {
+        width: 100%;
+        height: 54px;
+        border: 1px solid #37c0fb;
+        border-radius: 4px
+    }
+    #email {
+        width: 100%;
+        height: 54px;
+        border: 1px solid #DADADA;
+        border-radius: 5px;
+    }
+    #email:focus {
+        width: 100%;
+        height: 54px;
+        border: 1px solid #37c0fb;
+        border-radius: 4px
+    }
+    #message {
+        width: 100%;
+        height: 150px;
+        border: 1px solid #DADADA;
+        border-radius: 5px;
+    }
+    #message:focus {
+        width: 100%;
+        border: 1px solid #37c0fb;
+        border-radius: 4px
+    }
+    input[type="submit"] {
+        background: #555555;
+        color: white;
+        width: 160px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        border: 1px solid #555555;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background: #666666;
+    }
+    /*Icons*/
+    
+    .icons {
+        font-size: 1em;
+        text-align: center;
+    }
+    .icons li {
+        display: inline-block;
+        margin: 0px 10px 0px 10px;
+        font-size: 30px;
+    }
+    .icons li a {
+        color: #999999;
+    }
+    .icons li a:hover {
+        color: #474747;
+    }
+    .icons li a span {
+        display: none
+    }
+    /*copyright*/
+    
+    .copyright {
+        margin: 10px 0px 10px 0px;
+        text-align: center;
+        color: #474747;
+    }
+    .copyright .menu li {
+        font-family: arial;
+        font-size: 0.9em;
+        padding: 0px 10px 0px 10px;
+        display: inline-block;
+    }
+    .copyright .menu li:last-child {
+        border-left: 1px solid #474747;
+    }
+    .copyright .menu li a {
+        color: #474747;
+        border-bottom: 1px dashed #474747
+    }
+    .copyright .menu li a:hover {
+        color: #37c0fb;
+        border-bottom: 1px dashed #f7f7f7
+    }
+    .style1 {
+        overflow: hidden;
+        background: white;
+    }
+    .container .row .u3 #sidebar1 {
+        float: left;
+        width: 100%;
+    }
+    .container .row .u6 #content {
+        width: 100%;
+    }
+    .container .row .u3 #sidebar2 {
+        float: left;
+        width: 100%;
+    }
+    #newmenu {
+        background: #333333;
+    }
+    #newmenu>ul>li {
+        width: 100%;
+        font-size: 1em;
+        color: white;
+        border-bottom: 1px solid #474747;
+        padding: 15px 0px;
+    }
+    #newmenu>ul>li:nth-child(2) {
+        padding-bottom: 0px;
+    }
+    #newmenu>ul>li>a {
+        font-size: 1em;
+        color: white;
+        font-weight: bold;
+        padding: 0px 20px;
+    }
+    #newmenu>ul>li>ul {
+        margin-top: 15px;
+    }
+    #newmenu>ul>li>ul>li {
+        font-size: 1em;
+        color: white;
+        border-bottom: 1px solid #474747;
+        padding: 15px 0px;
+    }
+    #newmenu>ul>li>ul>li:nth-child(4) {
+        padding-bottom: 0px;
+    }
+    #newmenu>ul>li>ul>li:first-child {
+        border-top: 1px solid #474747;
+    }
+    #newmenu>ul>li>ul>li:last-child {
+        border-bottom: 0px solid red;
+    }
+    #newmenu>ul>li>ul>li>a {
+        font-size: 1em;
+        color: white;
+        padding: 0px 40px 0px 40px;
+    }
+    #newmenu>ul>li>ul>li>ul {
+        margin-top: 15px;
+    }
+    #newmenu>ul>li>ul>li>ul>li {
+        font-size: 1em;
+        color: white;
+        border-bottom: 1px solid #474747;
+        padding: 15px 0px;
+    }
+    #newmenu>ul>li>ul>li>ul>li:first-child {
+        font-size: 1em;
+        color: white;
+        border-top: 1px solid #474747;
+    }
+    #newmenu>ul>li>ul>li>ul>li:last-child {
+        font-size: 1em;
+        color: white;
+        border-bottom: 0px solid red;
+    }
+    #newmenu>ul>li>ul>li>ul>li>a {
+        font-size: 1em;
+        color: white;
+        padding: 0px 60px 0px 60px;
+    }
+}
