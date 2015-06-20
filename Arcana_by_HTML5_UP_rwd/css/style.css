@@ -139,7 +139,7 @@ em {
         font-size: 0.9em;
         color: white;
         background-image: url('../images/banner.jpg');
-        background-size: 100%;
+        background-size: cover;
         height: 430px;
         border-bottom: 105px solid rgba(27, 27, 27, 0.75);
     }
@@ -512,6 +512,7 @@ em {
         color: white;
         height: 325px;
         background-image: url('../images/banner.jpg');
+        background-size:cover;
         background-position: center;
         border-bottom: 145px solid rgba(27, 27, 27, 0.75);
     }
