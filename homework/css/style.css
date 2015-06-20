@@ -1,0 +1,146 @@
+nav {
+    display: none;
+}
+
+body {
+    font-family: 標楷體, sans-serif;
+    font-size: 2em;
+    background: url('../images/background.jpg') fixed no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.container-fluid {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.display {
+    display: none;
+}
+
+#ardiv {
+    height: 60%;
+    position: fixed;
+    z-index: 99;
+}
+
+#armenu {
+    height: 100%;
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    padding: 0;
+    text-align: center;
+    overflow: auto;
+}
+
+#armenu li {
+    padding: 10px 0px;
+}
+
+#armenu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#armenu li:hover {
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    background: linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+}
+
+.liactive {
+    font-weight: 900;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    background: linear-gradient(left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+}
+
+#menutag {
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background: rgba(213, 213, 213, 0.6);
+    border-radius: 0px 0px 30px 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+h1 {
+    color: black;
+}
+
+hr {
+    border: 1px dashed black;
+}
+
+#content {
+    color: black;
+    z-index: 0;
+}
+
+#content .row {
+    height: 100vh;
+}
+
+#hw1,
+#hw2,
+#hw3 {
+    text-align: center;
+}
+
+#hw1 input,
+#hw2 input {
+    margin: 20px;
+    font-size: 1.5em;
+    border: 1px solid #cccccc;
+}
+
+#hw1 input[type="submit"],
+#hw2 input[type="submit"] {
+    background: #cccccc;
+    border-radius: 8px;
+}
+
+#hw1 input[type="submit"]:hover,
+#hw2 input[type="submit"]:hover {
+    opacity: 0.8;
+}
+
+#total,
+#total_visa,
+#total_other {
+    font-size: 3em;
+}
+
+#back {
+    position: fixed;
+    text-align: center;
+    font-size: 2em;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+    color: gray;
+    background: rgba(213, 213, 213, 0.6);
+    cursor: pointer;
+    display: none;
+}
+
+#back:hover {
+    background: rgba(213, 213, 213, 0.9);
+}
+
+@media screen and (max-width: 765px) {
+    nav,
+    #back {
+        display: block;
+    }
+    #ardiv {
+        display: none;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="author" content="vincent">
+    <meta name="keywords" content="vincent學習日誌">
+    <meta name="description" content="vincent學習日誌">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script type="text/javascript" src="js/compute.js"></script>
+    <script src="js/scene.js"></script>
+    <title>Vincent學習日誌</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#hw1">等差數列</a></li>
+                            <li><a href="#hw2">信用卡分期本利和</a></li>
+                            <li><a href="#hw3">冒險小遊戲</a></li>
+                            <li><a href="http://jinfu8898.github.io/html252/Arcana_by_HTML5_UP_rwd/">排版練習</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-md-3  col-sm-3  col-xs-3" id="ardiv">
+                <div class="col-md-offset-2 col-md-10  col-sm-11 col-sm-offset-2 col-xs-11 col-xs-offset-1" id="armenu">
+                    <ul>
+                        <li><a href="#hw1">等差數列</a></li>
+                        <li><a href="#hw2">信用卡分期本利和</a></li>
+                        <li><a href="#hw3">冒險小遊戲</a></li>
+                        <li><a href="http://jinfu8898.github.io/html252/Arcana_by_HTML5_UP_rwd/" target="_blank">排版練習</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9  col-md-offset-3 col-sm-9  col-sm-offset-3 col-xs-12 " id="content">
+                <div class="row" id="hw1">
+                    <h1>等差數列</h1>
+                    <div id="hw1">
+                        <div>
+                            <input type="number" placeholder="起始" id="begin">
+                        </div>
+                        <div>
+                            <input type="number" placeholder="公差" id="sequence">
+                        </div>
+                        <div>
+                            <input type="number" placeholder="個數" id="number">
+                        </div>
+                        <div>
+                            <button class="btn btn-default btn-lg" id="submit" onclick="compute()">計算</button>
+                            <button class="btn btn-default btn-lg" id="submit" onclick="reset()">重新計算</button>
+                            <span id="total"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="hw2">
+                    <h1>信用卡分期本利和</h1>
+                    <div>
+                        <input type="number" placeholder="刷卡金額" id="amount">
+                    </div>
+                    <div>
+                        <input type="number" placeholder="利息" id="interest">
+                    </div>
+                    <div>
+                        <input type="number" placeholder="期數" id="period">
+                    </div>
+                    <div>
+                        <button class="btn btn-default btn-lg" id="submit" onclick="compute_visa()">計算</button>
+                        <button class="btn btn-default btn-lg" id="submit" onclick="reset_visa()">重新計算</button>
+                        <span id="total_visa"></span>
+                        <span id="total_other"></span>
+                    </div>
+                </div>
+                <div class="row" id="hw3">
+                    <h1>冒險小遊戲</h1>
+                    <br>
+                    <img id="sceneimg" src="images/scene0.png" alt="Stick Figure Adventure" />
+                    <br>
+                    <br /> Please choose:
+                    <button class="btn btn-default" id="decision1" onclick="changeScene(1)">1</button>
+                    <button class="btn btn-default" id="decision2" onclick="changeScene(1)">2</button>
+                    <button class="btn btn-default" onclick="changeScene(3)">Reset</button>
+                </div>
+            </div>
+            <div id="back">˄</div>
+        </div>
+    </div>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    <script src="js/style.js"></script>
+</body>
+
+</html>
