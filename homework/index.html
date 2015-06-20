@@ -7,15 +7,15 @@
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="author" content="vincent">
-    <meta name="keywords" content="vincent學習日誌">
-    <meta name="description" content="vincent學習日誌">
+    <meta name="keywords" content="HTM252-homework">
+    <meta name="description" content="HTM252-homework">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <script type="text/javascript" src="js/compute.js"></script>
     <script src="js/scene.js"></script>
-    <title>Vincent學習日誌</title>
+    <title>HTM252-homework</title>
 </head>
 
 <body>
@@ -35,7 +35,7 @@
                             <li><a href="#hw1">等差數列</a></li>
                             <li><a href="#hw2">信用卡分期本利和</a></li>
                             <li><a href="#hw3">冒險小遊戲</a></li>
-                            <li><a href="http://jinfu8898.github.io/html252/Arcana_by_HTML5_UP_rwd/">排版練習</a></li>
+                            <li><a href="http://jinfu8898.github.io/html252/Arcana_by_HTML5_UP_rwd/" target="_blank">排版練習</a></li>
                         </ul>
                     </div>
                 </div>
@@ -52,51 +52,57 @@
             </div>
             <div class="col-md-9  col-md-offset-3 col-sm-9  col-sm-offset-3 col-xs-12 " id="content">
                 <div class="row" id="hw1">
-                    <h1>等差數列</h1>
-                    <div id="hw1">
-                        <div>
-                            <input type="number" placeholder="起始" id="begin">
-                        </div>
-                        <div>
-                            <input type="number" placeholder="公差" id="sequence">
-                        </div>
-                        <div>
-                            <input type="number" placeholder="個數" id="number">
-                        </div>
-                        <div>
-                            <button class="btn btn-default btn-lg" id="submit" onclick="compute()">計算</button>
-                            <button class="btn btn-default btn-lg" id="submit" onclick="reset()">重新計算</button>
-                            <span id="total"></span>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h1>等差數列</h1>
+                        <div id="hw1">
+                            <div>
+                                <input type="number" placeholder="起始" id="begin">
+                            </div>
+                            <div>
+                                <input type="number" placeholder="公差" id="sequence">
+                            </div>
+                            <div>
+                                <input type="number" placeholder="個數" id="number">
+                            </div>
+                            <div>
+                                <button class="btn btn-default btn-lg" id="submit" onclick="compute()">計算</button>
+                                <button class="btn btn-default btn-lg" id="submit" onclick="reset()">重新計算</button>
+                                <span id="total"></span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row" id="hw2">
-                    <h1>信用卡分期本利和</h1>
-                    <div>
-                        <input type="number" placeholder="刷卡金額" id="amount">
-                    </div>
-                    <div>
-                        <input type="number" placeholder="利息" id="interest">
-                    </div>
-                    <div>
-                        <input type="number" placeholder="期數" id="period">
-                    </div>
-                    <div>
-                        <button class="btn btn-default btn-lg" id="submit" onclick="compute_visa()">計算</button>
-                        <button class="btn btn-default btn-lg" id="submit" onclick="reset_visa()">重新計算</button>
-                        <span id="total_visa"></span>
-                        <span id="total_other"></span>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h1>信用卡分期本利和</h1>
+                        <div>
+                            <input type="number" placeholder="刷卡金額" id="amount">
+                        </div>
+                        <div>
+                            <input type="number" placeholder="利息" id="interest">
+                        </div>
+                        <div>
+                            <input type="number" placeholder="期數" id="period">
+                        </div>
+                        <div>
+                            <button class="btn btn-default btn-lg" id="submit" onclick="compute_visa()">計算</button>
+                            <button class="btn btn-default btn-lg" id="submit" onclick="reset_visa()">重新計算</button>
+                            <span id="total_visa"></span>
+                            <span id="total_other"></span>
+                        </div>
                     </div>
                 </div>
                 <div class="row" id="hw3">
-                    <h1>冒險小遊戲</h1>
-                    <br>
-                    <img id="sceneimg" src="images/scene0.png" alt="Stick Figure Adventure" />
-                    <br>
-                    <br /> Please choose:
-                    <button class="btn btn-default" id="decision1" onclick="changeScene(1)">1</button>
-                    <button class="btn btn-default" id="decision2" onclick="changeScene(1)">2</button>
-                    <button class="btn btn-default" onclick="changeScene(3)">Reset</button>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <h1>冒險小遊戲</h1>
+                        <br>
+                        <img id="sceneimg" src="images/scene0.png" alt="Stick Figure Adventure" />
+                        <br>
+                        <br /> Please choose:
+                        <button class="btn btn-default" id="decision1" onclick="changeScene(1)">1</button>
+                        <button class="btn btn-default" id="decision2" onclick="changeScene(1)">2</button>
+                        <button class="btn btn-default" onclick="changeScene(3)">Reset</button>
+                    </div>
                 </div>
             </div>
             <div id="back">˄</div>
