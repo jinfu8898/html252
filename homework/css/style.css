@@ -79,23 +79,23 @@ hr {
 }
 
 #content {
+    text-align: center;
     color: black;
     z-index: 0;
 }
 
-#content .row {
+#content > div {
     height: 100vh;
 }
 
-#hw1,
-#hw2,
-#hw3 {
-    text-align: center;
+img {
+    width: 100%;
 }
 
 #hw1 input,
 #hw2 input {
-    margin: 20px;
+    width: 100%;
+    margin-bottom: 20px;
     font-size: 1.5em;
     border: 1px solid #cccccc;
 }
@@ -112,9 +112,8 @@ hr {
 }
 
 #total,
-#total_visa,
-#total_other {
-    font-size: 3em;
+#total_visa {
+    font-size: 2em;
 }
 
 #back {

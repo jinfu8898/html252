@@ -38,17 +38,18 @@ function compute_visa() {
 
     sum = Math.round((amount * (1 + (interest / 100))) / period);
 
-    total_other.innerHTML = "各期:" + parseInt(sum);
-
-    total_other.style.border = "1px dashed red";
-
     if (sum * period < amount * (1 + (interest / 100))) {
+
         var diff = (amount * (1 + (interest / 100))) - (sum * period);
-        total.innerHTML = "第一期:" + parseInt(sum + diff);
-        total.style.border = "1px dashed red";
+
+        total_visa.innerHTML = "第一期:" + parseInt(sum + diff) + "<br>" + "各期:" + parseInt(sum);
+
+    } else {
+
+        total_visa.innerHTML = "各期:" + parseInt(sum);
     }
 
-
+    total_visa.style.border = "1px dashed red";
 }
 
 function reset_visa() {
@@ -57,10 +58,7 @@ function reset_visa() {
     document.getElementById('interest').value = "";
     document.getElementById('period').value = "";
     var total = document.getElementById('total_visa')
-    var total_other = document.getElementById('total_other');
-    total_other.innerHTML = "";
     total.innerHTML = "";
-    total_other.style.border = "";
     total.style.border = "";
 
 }
